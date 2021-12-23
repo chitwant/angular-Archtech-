@@ -1,0 +1,49 @@
+
+   <mat-card>
+        <mat-card-title>REGISTER</mat-card-title>
+        <mat-card-content>
+          <form>
+            <p>
+              <mat-form-field>
+                <input
+                  type="text"
+                  matInput
+                  placeholder="Email Address"
+                  formControlName="username"
+                />
+              </mat-form-field>
+            </p>
+      
+            <p>
+              <mat-form-field>
+                <input
+                  type="text"
+                  matInput
+                  placeholder="Producer Number"
+                  formControlName="Producer"
+                />
+              </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                  <input
+                    type="text"
+                    matInput
+                    placeholder="Cell Phone Number"
+                    formControlName="password"
+                  />
+                </mat-form-field>
+              </p>
+      
+            <!-- <p *ngIf="error" class="error">
+          {{ error }}
+          </p> -->
+      
+            <div class="button">
+              <button mat-raised-button color="primary">SUBMIT</button>
+            </div>
+            <p class="text">Already have an account? <a routerLink="/login">Sign in</a></p>
+          </form>
+        </mat-card-content>
+      </mat-card>
+  

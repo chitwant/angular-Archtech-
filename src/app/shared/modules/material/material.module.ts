@@ -12,6 +12,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 @NgModule({
   imports: [
@@ -26,7 +28,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatCardModule,
     MatMenuModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FlexLayoutModule,
   ],
   exports: [
     LayoutModule,
@@ -39,7 +42,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatCardModule,
     MatMenuModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FlexLayoutModule,
   ],
 })
 export class MaterialModule { }

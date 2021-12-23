@@ -8,7 +8,7 @@ import { NotFoundComponent } from './shared/component/not-found/not-found.compon
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'admin',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -26,15 +26,20 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'login',
+    path: '',
     component: LayoutFrontendComponent,
     children: [
       {
-        path: '',
+        path: 'login',
         loadChildren: () => import('./pages/login/login.module').then((m) => m.LoginModule)
+      },
+      {
+        path: 'signup',
+        loadChildren: () => import('./pages/signup/signup.module').then((m) => m.SignupModule)
       }
     ]
   },
+  
   {
 	  path: '**',
 	  component: NotFoundComponent
