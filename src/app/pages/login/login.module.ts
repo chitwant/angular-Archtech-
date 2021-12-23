@@ -3,10 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from './login.component';
-
-import { MatCardModule } from "@angular/material/card";
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatButtonModule } from '@angular/material/button';
+import { MaterialModule } from 'src/app/shared/modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     CommonModule,
     LoginRoutingModule,
-
-    MatCardModule,
-    MatFormFieldModule,
-    MatButtonModule
+    MaterialModule,
   ]
 })
 export class LoginModule { }
