@@ -1,5 +1,5 @@
 
-   <mat-card>
+   <mat-card @slideLeft>
         <mat-card-title>REGISTER</mat-card-title>
         <mat-card-content>
           <form>
@@ -13,7 +13,7 @@
                 />
               </mat-form-field>
             </p>
-      
+
             <p>
               <mat-form-field>
                 <input
@@ -34,11 +34,11 @@
                   />
                 </mat-form-field>
               </p>
-      
+
             <!-- <p *ngIf="error" class="error">
           {{ error }}
           </p> -->
-      
+
             <div class="button">
               <button mat-raised-button color="primary">SUBMIT</button>
             </div>
@@ -46,4 +46,3 @@
           </form>
         </mat-card-content>
       </mat-card>
-  

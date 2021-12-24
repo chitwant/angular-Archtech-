@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { slideLeft } from 'src/app/shared/animations/slideLeft';
 
 @Component({
   selector: 'app-create-password',
   templateUrl: './create-password.component.html',
-  styleUrls: ['./create-password.component.scss']
+  styleUrls: ['./create-password.component.scss'],
+  animations: [
+    slideLeft
+  ]
 })
 export class CreatePasswordComponent implements OnInit {
 

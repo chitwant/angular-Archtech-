@@ -5,11 +5,15 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { MatGridList } from "@angular/material/grid-list";
 import { MatCard } from "@angular/material/card";
 import { MatMenu } from "@angular/material/menu";
+import { slideLeft } from 'src/app/shared/animations/slideLeft';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
+  animations: [
+    slideLeft
+  ]
 })
 export class DashboardComponent {
   /** Based on the screen size, switch from standard to one column per row */
